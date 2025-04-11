@@ -56,7 +56,7 @@ const HeroSection = () => {
       </div>
 
       {/* Blue Bar at the Bottom */}
-      <div className="w-full h-16 sm:h-24 bg-[#004899]" />
+      <div className="w-full h-16 sm:h-40 bg-[#004899]" />
     </section>
   );
 };

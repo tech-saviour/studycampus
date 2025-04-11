@@ -5,7 +5,7 @@ import Image from 'next/image';
 const AboutFounder = () => {
   return (
     <section
-      className="bg-white text-gray-800 w-full py-10 px-6 md:px-20"
+      className="bg-white text-gray-800 w-full py-40 px-6 md:px-20"
       aria-label="About Our Founder"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-8">
@@ -24,7 +24,7 @@ const AboutFounder = () => {
 
         {/* Founder Image */}
         <div className="  flex justify-center md:justify-end ">
-          <div className="relative border-[10px] border-blue-900 rounded-md w-48 h-56 md:w-56 md:h-64 shadow-lg">
+          <div className="relative border-[20px] border-blue-900 rounded-md w-48 h-56 md:w-56 md:h-64 shadow-lg">
             <Image
               src="/founder.jpg" // replace with your image path in /public
               alt="Founder - Er. Lakshay Sharma"
