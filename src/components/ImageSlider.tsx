@@ -31,7 +31,7 @@ const ImageSlider = () => {
 
   return (
     <section className="w-full" aria-label="Image Carousel">
-      <div className="relative w-full mx-auto overflow-hidden  shadow-lg flex justify-center items-center">
+      <div className="z-10 relative w-full mx-auto overflow-hidden  shadow-lg flex justify-center items-center">
         <Image
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
