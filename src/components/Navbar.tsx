@@ -28,7 +28,7 @@ const Navbar = () => {
             alt="The Study Campus logo"
             width={40}
             height={40}
-            className="rounded-full bg-white p-1"
+            className="rounded-full p-1"
           />
           <span className="text-lg font-semibold">The Study Campus</span>
         </Link>
