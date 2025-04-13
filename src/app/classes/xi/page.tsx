@@ -25,9 +25,9 @@ export default function AchieversSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {[
-            { name: 'John Doe', image: '/achiever1.png' },
-            { name: 'Jane Smith', image: '/achiever2.png' },
-            { name: 'Sara Lee', image: '/achiever3.png' },
+            { name: 'Gopal Sharma', image: '/achiever10.png' },
+            { name: 'Priya Pandey', image: '/achiever6.png' },
+            { name: 'Dipti', image: '/achiever4.png' },
           ].map((faculty, index) => (
             <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative w-full h-56">
