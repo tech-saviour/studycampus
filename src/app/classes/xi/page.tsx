@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function AchieversSection() {
   return (
-    <section className="relative py-16 bg-white overflow-hidden" aria-labelledby="class-xith-heading">
+    <section className="relative py-6 md:py-8 bg-white overflow-hidden" aria-labelledby="class-xith-heading">
       
       {/* Page Heading */}
       <header className="text-center mb-12">
@@ -19,11 +19,11 @@ export default function AchieversSection() {
 
       {/* Our Faculty Section */}
       <section aria-labelledby="faculty-heading" className="mb-20">
-        <h2 id="faculty-heading" className="text-2xl md:text-3xl font-bold text-[#004899] text-center mb-12">
+        <h2 id="faculty-heading" className="text-2xl md:text-3xl font-bold text-[#004899] text-center py-8 md:py-14">
           Our Faculty
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl md:mx-auto py-8 px-8">
           {[
             { name: 'Gopal Sharma', image: '/achiever10.png' },
             { name: 'Priya Pandey', image: '/achiever6.png' },
@@ -54,11 +54,11 @@ export default function AchieversSection() {
 
       {/* Our Achievers Section */}
       <section aria-labelledby="achievers-heading" className="mb-20">
-        <h2 id="achievers-heading" className="text-2xl md:text-3xl font-bold text-[#004899] text-center mb-12">
+        <h2 id="achievers-heading" className="text-2xl md:text-3xl font-bold text-[#004899] text-center  py-8 md:py-14">
           Our Achievers
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl md:mx-auto py-16 px-8">
           {[
             { name: 'John Doe', image: '/achiever1.png' },
             { name: 'Jane Smith', image: '/achiever2.png' },
