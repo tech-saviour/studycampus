@@ -76,9 +76,8 @@ export default function AchieversSection() {
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold mb-2">{achiever.name}</h3>
-                <p className="text-gray-600 text-sm">
-                  A brief note celebrating {achiever.name}'s accomplishments and contributions.
-                </p>
+                <p>{`A brief note celebrating ${achiever.name}'s accomplishments and contributions.`}</p>
+
               </div>
             </article>
           ))}
