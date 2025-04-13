@@ -1,159 +1,100 @@
 'use client'
 
+import ClassSchedule from '@/components/ClassSchedule'
 import ImageSlider from '@/components/ImageSlider'
 import Image from 'next/image'
 
 export default function AchieversSection() {
   return (
-    <section className="relative py-16 bg-white overflow-hidden"
-    aria-label="class ixth">
-    <h2 className="text-3xl md:text-5xl text-center font-bold mb-12 text-[#004899]">Class IXth</h2>
-    <ImageSlider/>
-      {/* Left Dots */}
-      <Image
-        src="/dots.png"
-        alt="dots pattern left"
-        width={80}
-        height={200}
-        className="z-0 block absolute left-0 top-1/12"
-      />
+    <section className="relative py-16 bg-white overflow-hidden" aria-labelledby="class-ixth-heading">
+      
+      {/* Page Heading */}
+      <header className="text-center mb-12">
+        <h1 id="class-ixth-heading" className="text-3xl md:text-5xl font-bold text-[#004899]">
+          Class IXth
+        </h1>
+      </header>
 
-      {/* Right Dots */}
-      <Image
-        src="/dots.png"
-        alt="dots pattern right"
-        width={80}
-        height={200}
-        className="z-0 block absolute right-0 top-2/3"
-      />
+      <ImageSlider />
 
-      <h2 className="text-2xl md:text-3xl my-5 font-bold text-[#004899] text-center mb-12 font-[600]">
-        Our Faculty
-      </h2>
+      {/* Our Faculty Section */}
+      <section aria-labelledby="faculty-heading" className="mb-20">
+        <h2 id="faculty-heading" className="text-2xl md:text-3xl font-bold text-[#004899] text-center mb-12">
+          Our Faculty
+        </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 my-14 pb-16 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-        {/* Card 1 */}
-        <article className="bg-white m-10 md:m-0 z-20 rounded-lg shadow-md overflow-hidden">
-          <div className="z-10 relative w-full h-56">
-            <Image
-              src="/achiever1.png"
-              alt="Achiever 1"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="text-lg font-semibold mb-2">John Doe</h3>
-            <p className="text-gray-600 text-sm">
-              Body text for whatever you would like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.
-            </p>
-          </div>
-        </article>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          {[
+            { name: 'John Doe', image: '/achiever1.png' },
+            { name: 'Jane Smith', image: '/achiever2.png' },
+            { name: 'Sara Lee', image: '/achiever3.png' },
+          ].map((faculty, index) => (
+            <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="relative w-full h-56">
+                <Image
+                  src={faculty.image}
+                  alt={`${faculty.name} photo`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold mb-2">{faculty.name}</h3>
+                <p className="text-gray-600 text-sm">
+                  A short description or highlight about {faculty.name}, featuring their main strengths, experiences, or memorable qualities.
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-        {/* Card 2 */}
-        <article className="bg-white z-20 m-10 md:m-0 rounded-lg shadow-md overflow-hidden">
-          <div className=" relative w-full h-56">
-            <Image
-              src="/achiever2.png"
-              alt="Achiever 2"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="text-lg font-semibold mb-2">Jane Smith</h3>
-            <p className="text-gray-600 text-sm">
-              Body text for whatever you would like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.
-            </p>
-          </div>
-        </article>
+      <hr className="left-0 w-full h-[3px] bg-gray-400 my-5 z-0" />
 
-        {/* Card 3 */}
-        <article className="bg-white z-20 m-10 md:m-0 rounded-lg shadow-md overflow-hidden">
-          <div className="relative w-full h-56">
-            <Image
-              src="/achiever3.png"
-              alt="Achiever 3"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="text-lg font-semibold mb-2">Sara Lee</h3>
-            <p className="text-gray-600 text-sm">
-              Body text for whatever you would like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.
-            </p>
-          </div>
-        </article>
-      </div>
+      {/* Our Achievers Section */}
+      <section aria-labelledby="achievers-heading" className="mb-20">
+        <h2 id="achievers-heading" className="text-2xl md:text-3xl font-bold text-[#004899] text-center mb-12">
+          Our Achievers
+        </h2>
 
-      <div className=" left-0 w-full h-[3px] bg-gray-400 m-5 z-0" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          {[
+            { name: 'John Doe', image: '/achiever1.png' },
+            { name: 'Jane Smith', image: '/achiever2.png' },
+            { name: 'Sara Lee', image: '/achiever3.png' },
+          ].map((achiever, index) => (
+            <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="relative w-full h-56">
+                <Image
+                  src={achiever.image}
+                  alt={`Photo of achiever ${achiever.name}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold mb-2">{achiever.name}</h3>
+                <p className="text-gray-600 text-sm">
+                  A brief note celebrating {achiever.name}'s accomplishments and contributions.
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-      <h2 className="text-2xl md:text-3xl my-12 font-bold text-[#004899] text-center mb-12 font-[600]">
-        Our Achievers
-      </h2>
+      <hr className="left-0 w-full h-[3px] bg-gray-400 my-5 z-0" />
 
-      <div className="grid grid-cols-1 my-14 pb-16 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-        {/* Card 1 */}
-        <article className="bg-white m-10 md:m-0 z-20 rounded-lg shadow-md overflow-hidden">
-          <div className="z-10 relative w-full h-56">
-            <Image
-              src="/achiever1.png"
-              alt="Achiever 1"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="text-lg font-semibold mb-2">John Doe</h3>
-            <p className="text-gray-600 text-sm">
-              Body text for whatever you would like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.
-            </p>
-          </div>
-        </article>
-
-        {/* Card 2 */}
-        <article className="bg-white z-20 m-10 md:m-0 rounded-lg shadow-md overflow-hidden">
-          <div className=" relative w-full h-56">
-            <Image
-              src="/achiever2.png"
-              alt="Achiever 2"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="text-lg font-semibold mb-2">Jane Smith</h3>
-            <p className="text-gray-600 text-sm">
-              Body text for whatever you would like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.
-            </p>
-          </div>
-        </article>
-
-        {/* Card 3 */}
-        <article className="bg-white z-20 m-10 md:m-0 rounded-lg shadow-md overflow-hidden">
-          <div className="relative w-full h-56">
-            <Image
-              src="/achiever3.png"
-              alt="Achiever 3"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover"
-            />
-          </div>
-          <div className="p-6">
-            <h3 className="text-lg font-semibold mb-2">Sara Lee</h3>
-            <p className="text-gray-600 text-sm">
-              Body text for whatever you would like to say. Add main takeaway points, quotes, anecdotes, or even a very short story.
-            </p>
-          </div>
-        </article>
-      </div>
+      {/* Class Schedule Section */}
+      <section aria-labelledby="schedule-heading" className="text-center pt-8">
+        <h2 id="schedule-heading" className="text-2xl font-bold text-gray-800 mb-8">
+          Class IXth Schedule
+        </h2>
+        <ClassSchedule />
+      </section>
+      
     </section>
   )
 }
