@@ -5,7 +5,7 @@ import Image from 'next/image';
 const AboutFounder = () => {
   return (
     <section
-    className="relative bg-white text-gray-800 w-full py-40 px-6 md:px-20"
+    className="relative bg-white text-gray-800 w-full py-16 md:py-32 px-6 md:px-20"
     aria-label="About Our Founder"
   >
     {/* Left Dots */}

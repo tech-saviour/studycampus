@@ -5,14 +5,39 @@ import 'keen-slider/keen-slider.min.css';
 import Image from 'next/image';
 import { useEffect } from 'react';
 
-const testimonials = new Array(5).fill({
-  name: 'Mr. Ramgopal Sharma',
-  country: 'Meerut',
-  review: `"this is the best institute i ever see in my life 
-i love this one 
-bro its is awesome "`,
-  img: '/parent.jpg', // Make sure this is in /public
-});
+const testimonials = [
+  {
+    name: 'Mr. Ramgopal Sharma',
+    country: 'Meerut',
+    review: `"This is the best institute I’ve ever seen in my life. I love this place — truly amazing!"`,
+    img: '/parent.jpg',
+  },
+  {
+    name: 'Mrs. Sunita Devi',
+    country: 'Meerut',
+    review: `"Wonderful experience for my child! The teachers are supportive and the environment is excellent."`,
+    img: '/parent1.jpg',
+  },
+  {
+    name: 'Mr. Rajeev Tyagi',
+    country: 'Meerut',
+    review: `"A great institute with excellent results every year. Highly recommended for serious students."`,
+    img: '/parent2.jpg',
+  },
+  {
+    name: 'Mrs. Poonam Singh',
+    country: 'Meerut',
+    review: `"My son has improved a lot after joining here. Best decision we made for his future."`,
+    img: '/parent3.jpg',
+  },
+  {
+    name: 'Mr. Anil Kumar',
+    country: 'Meerut',
+    review: `"Top-notch faculty and a very positive atmosphere for students. I'm very happy with the results."`,
+    img: '/parent4.jpg',
+  },
+];
+
 
 const ParentsTestimonials = () => {
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({

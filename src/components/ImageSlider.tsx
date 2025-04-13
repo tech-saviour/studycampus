@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  { src: '/slider/slider.png', alt: 'Children playing in classroom' },
-  { src: '/slider/slider1.png', alt: 'Kids learning and drawing' },
-  { src: '/slider/slider2.png', alt: 'Kids learning and drawing' },
+  { src: '/slider/slider.png', alt: 'study campus 12' },
+  { src: '/slider/slider1.png', alt: 'class 11 slider' },
+  { src: '/slider/slider2.png', alt: 'breaking announcement' },
 ];
 
 const ImageSlider = () => {

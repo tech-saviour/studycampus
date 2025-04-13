@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutUs = () => {
   return (
-    <section className="relative w-full bg-white px-6 md:px-20 py-8 overflow-hidden">
+    <section className="relative w-full bg-white px-6 md:px-20 py-8 overflow-hidden scroll-mt-60 " id="about">
         
       <div className="absolute top-11/12 left-0 w-full h-[80px] bg-[#004899] -translate-y-1/2 z-0 " />
 
