@@ -23,7 +23,7 @@ export default function AchieversSection() {
         className="z-0 rotate-180 block absolute right-0 top-2/3"
       />
 
-      <h2 className="text-3xl font-bold text-[#004899] text-center mb-12 font-[600]">
+      <h2 className="text-3xl font-bold text-[#004899] text-center mb-12 ">
         Our Achievers
       </h2>
 

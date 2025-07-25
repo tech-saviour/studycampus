@@ -2,3 +2,15 @@
 @import "tw-animate-css";
 @import 'keen-slider/keen-slider.min.css';
 
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.motion-safe\:animate-float-slow {
+  animation: float-slow 3.5s ease-in-out infinite;
+}
